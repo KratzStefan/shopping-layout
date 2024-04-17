@@ -54,30 +54,15 @@ main {
 }
 
 .head-1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 0, 0, 0) 1%,
-      rgba(255, 255, 255, 1) 99%
-    ),
-    url("https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+  background-image: url("https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
 }
 
 .head-2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 0, 0, 0) 1%,
-      rgba(255, 255, 255, 1) 99%
-    ),
-    url("https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0");
+  background-image: url("https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0");
 }
 
 .head-3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 0, 0, 0) 1%,
-      rgba(255, 255, 255, 1) 99%
-    ),
-    url("https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80");
+  background-image: url("https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80");
 }
 
 #special-box {
@@ -98,9 +83,14 @@ main {
   bottom: 0rem;
   padding-left: 0.75rem;
   padding-bottom: 1rem;
+  padding-top: 2rem;
   color: #7e7e7e;
   font-size: 0.75rem;
-  opacity: 70%;
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0) 5%,
+    rgba(255, 255, 255, 1) 95%
+  );
+  width: 100%;
 }
 /**************************************************************/
 /* Text */
@@ -119,6 +109,7 @@ p {
 /* Info-Box */
 
 .info-box {
+  position: relative;
   padding: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
