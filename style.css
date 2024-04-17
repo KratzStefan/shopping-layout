@@ -1,0 +1,277 @@
+/**************************************************************/
+/* Allgemein */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "helvetica", sans-serif;
+  font-style: small;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  color: black;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+_body {
+  --background-color: cadetblue;
+  --text-color: black;
+  --accent-color: cadetblue;
+  --accent-text-color: black;
+  --nav-link-active-bg-color: cadetblue;
+
+  margin: 0;
+}
+
+/**************************************************************/
+/* Speziefisch */
+
+body {
+  background-color: #f5f5f5;
+}
+
+main {
+  padding: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em 3em;
+}
+
+.article {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+/**************************************************************/
+/* Image-Head */
+
+.head-1 {
+  position: relative;
+  aspect-ratio: 2/1.35;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0) 1%,
+      rgba(255, 255, 255, 1) 99%
+    ),
+    url("https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.head-2 {
+  position: relative;
+  aspect-ratio: 2/1.35;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0) 1%,
+      rgba(255, 255, 255, 1) 99%
+    ),
+    url("https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0");
+
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.head-3 {
+  position: relative;
+  aspect-ratio: 2/1.35;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 0, 0, 0) 1%,
+      rgba(255, 255, 255, 1) 99%
+    ),
+    url("https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80");
+
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+#special-box {
+  position: absolute;
+  top: 0.25em;
+  right: 1em;
+  background-color: #f5f5f5;
+  opacity: 70%;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.bildunterschrift {
+  position: absolute;
+  bottom: 0rem;
+  padding-left: 0.75rem;
+  padding-bottom: 1rem;
+  color: #7e7e7e;
+  font-size: 0.75rem;
+  opacity: 70%;
+}
+/**************************************************************/
+/* Text */
+
+.text {
+  padding: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #7e7e7e;
+  line-height: 1.5rem;
+}
+
+/**************************************************************/
+/* Info-Box */
+
+.info-box {
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5em;
+}
+
+/**************************************************************/
+/* Preis */
+
+.preis {
+  padding: 0.001em;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/**************************************************************/
+/* Auswahlbereich */
+
+.size-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.text-size-quantity {
+  height: 1.5em;
+}
+.button {
+  background-color: #fff;
+  width: 5em;
+  height: 2em;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+
+/**************************************************************/
+/* Color Zeile */
+
+.color {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.color-text {
+  height: 1.5em;
+  margin-top: 0.25rem;
+}
+.shoe-color-blue {
+  margin-left: 1em;
+  background-color: rgb(7, 109, 188);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-red {
+  margin-left: 1em;
+  background-color: rgb(228, 79, 79);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-black {
+  margin-left: 1em;
+  background-color: black;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-green-black {
+  margin-left: 1em;
+  background-image: linear-gradient(90deg, rgb(167, 200, 75) 50%, black 50%);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-blue-black {
+  margin-left: 1em;
+  background-image: linear-gradient(90deg, rgb(7, 109, 188) 50%, black 50%);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-red-black {
+  margin-left: 1em;
+  background-image: linear-gradient(90deg, rgb(246, 123, 185) 50%, black 50%);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-red-white {
+  margin-left: 1em;
+  background-image: linear-gradient(90deg, rgb(231, 43, 43) 50%, white 50%);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+.shoe-color-black-white {
+  margin-left: 1em;
+  background-image: linear-gradient(90deg, black 50%, white 50%);
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
+}
+
+/**************************************************************/
+/* Add to Card */
+.Add {
+  background-color: rgb(68, 109, 204);
+  border-radius: 0.25rem;
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding: 1rem;
+  margin-top: 1rem;
+}
