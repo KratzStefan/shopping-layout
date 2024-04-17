@@ -22,16 +22,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-_body {
-  --background-color: cadetblue;
-  --text-color: black;
-  --accent-color: cadetblue;
-  --accent-text-color: black;
-  --nav-link-active-bg-color: cadetblue;
-
-  margin: 0;
-}
-
+/**************************************************************/
 /**************************************************************/
 /* Speziefisch */
 
@@ -54,52 +45,39 @@ main {
 /**************************************************************/
 /* Image-Head */
 
-.head-1 {
+.image-head {
   position: relative;
   aspect-ratio: 2/1.35;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
 
+.head-1 {
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0) 1%,
       rgba(255, 255, 255, 1) 99%
     ),
     url("https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
-
-  background-size: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
 .head-2 {
-  position: relative;
-  aspect-ratio: 2/1.35;
-
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0) 1%,
       rgba(255, 255, 255, 1) 99%
     ),
     url("https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0");
-
-  background-size: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
 .head-3 {
-  position: relative;
-  aspect-ratio: 2/1.35;
-
   background-image: linear-gradient(
       to bottom,
       rgba(255, 0, 0, 0) 1%,
       rgba(255, 255, 255, 1) 99%
     ),
     url("https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80");
-
-  background-size: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
 }
 
 #special-box {
@@ -174,6 +152,7 @@ p {
 }
 .text-size-quantity {
   height: 1.5em;
+  color: #7e7e7e;
 }
 .button {
   background-color: #fff;
@@ -198,70 +177,38 @@ p {
 .color-text {
   height: 1.5em;
   margin-top: 0.25rem;
+  color: #7e7e7e;
+}
+.color-knopf {
+  margin-left: 1em;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-blue {
-  margin-left: 1em;
   background-color: rgb(7, 109, 188);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-red {
-  margin-left: 1em;
   background-color: rgb(228, 79, 79);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-black {
-  margin-left: 1em;
   background-color: black;
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-green-black {
-  margin-left: 1em;
   background-image: linear-gradient(90deg, rgb(167, 200, 75) 50%, black 50%);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-blue-black {
-  margin-left: 1em;
   background-image: linear-gradient(90deg, rgb(7, 109, 188) 50%, black 50%);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-red-black {
-  margin-left: 1em;
   background-image: linear-gradient(90deg, rgb(246, 123, 185) 50%, black 50%);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-red-white {
-  margin-left: 1em;
   background-image: linear-gradient(90deg, rgb(231, 43, 43) 50%, white 50%);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 .shoe-color-black-white {
-  margin-left: 1em;
   background-image: linear-gradient(90deg, black 50%, white 50%);
-  height: 1.5em;
-  width: 1.5em;
-  border-radius: 1rem;
-  box-shadow: 0.2em 0.2em 0.2em rgb(211, 210, 210);
 }
 
 /**************************************************************/
@@ -271,7 +218,7 @@ p {
   border-radius: 0.25rem;
   text-align: center;
   font-size: 1rem;
-  color: whitesmoke;
+  color: #fff;
   padding: 1rem;
   margin-top: 1rem;
 }
